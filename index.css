@@ -1,0 +1,513 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Architects+Daughter", cursive;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 1px #57c7ff;
+    overflow-x: hidden;
+}
+
+header {
+   /*navigasi dapat menempel pada seluruh halaman*/
+   display: inline;
+   width: 100%;
+}
+
+.jumbotron {
+    background: url("./image/BestSingapore1.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: max-content;
+    
+    font-size: 25px;
+    padding: 1px;
+    text-align: center;
+    color: white;
+    text-shadow: 7px 7px 7px black
+}
+
+div h1 {
+    margin: 30px 5px 595px;
+}
+
+nav {
+    background-color: rgba(5, 5, 5, 0.85);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    height: 57px;
+    align-items: center;
+   /*Nilai top diperlukan agar ketika pengguna melakukan scrolling, 
+   elemen navigasi tetap berada di atas jendela browser*/
+}
+
+nav a{ /*menggunakan descendant selector*/
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2.5px 2.5px 2.5px #f50303fa;
+    padding: 14px 18px;
+}
+
+nav a:hover {
+    background-color: rgba(247, 3, 3, 0.65);
+    font-weight: bold;
+    color:rgba(17, 0, 255, 0.85);
+    text-shadow: 1.5px 1.5px 1.5px #f7f4f4fa
+}
+
+nav li {
+    list-style-type: none; /*menghilangkan buletan hitam pada list*/
+}   
+
+nav ul {
+    display: flex;
+    padding: 0px;
+    margin: 13px 0px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+main {
+    padding: 20px;
+}
+
+main li {
+    list-style-type: none;
+}
+
+div a , div p{
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+main div p {
+    text-indent: 40px;
+    text-align: justify;
+}
+
+div ol {
+    font-size: 20px;
+}
+
+h2, h3 {
+    color: #00a2c6;
+    text-shadow: 2px 2px 2px #030303
+}
+
+.featured-image {
+    float: left;
+    margin: 5px 20px 5px -15px;
+    width: 55%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px #222020e0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.card {
+    box-shadow: 8px 5px 8px 5px #222020e0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.profile, th, td  {
+    text-align: center;
+    table-layout: auto;
+}
+
+.profile img {
+    width: 200px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 5px;
+    color: white;
+    background-color: #0A1931;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #030303
+}
+
+footer p{
+    margin: 0;
+    padding: 10px;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #00a2c6
+}
+
+main div p, footer div p {
+    font-size: 17px;
+    color: #030303;
+    text-shadow: 1px 1px 1px #00a2c6;
+    /*padding: 5px;*/
+}
+
+footer div p {
+    margin: -3px 0 0;
+    padding: 0;
+    font-weight: bolder;   
+    text-shadow: 1px 1px 1px #e8eddf; 
+}
+
+section img {
+    width: 30%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+footer div figure {
+    margin: 9px 5px 0;
+}
+
+.container {
+    display: flex;
+    width: 700px;
+    height: 110px;
+    background-color: #1859dbd0;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.box {
+    background-color: #ffc847e8;
+    margin: 2px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.first, .second, .third, .fourth {
+    flex-grow: 1; 
+    margin: 5px;
+}
+
+.first img, .second img, .third img, .fourth img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.first img {
+    width: 65px; 
+}
+
+.second img, .third img, .fourth img {
+    width: 50px;
+}
+
+#content {
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 5px;
+}
+
+.table{
+    font-size: 17px;
+}
+
+aside p{
+    font-weight: bolder; 
+    font-size: 20px;
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    #content {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .jumbotron {
+        font-size: 25px;
+        padding: 60px 20px;
+        
+    }
+
+    nav {
+        background-color: #262626;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 90vh;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1; /*buat ilangin di atas Home*/
+        background-color: #262626c0;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.slide {
+        transform: translateX(0);
+    }
+
+    div h1 {
+        font-size: 50px;
+        margin: 150px 5px;
+    }
+
+    aside {
+        width: 100%;
+        padding: 0px 10px 15px 10px;
+        margin: 0;
+    }
+
+    div ol {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .featured-image {
+        float: none;
+        width: 90%;
+        height: auto;
+        object-fit: cover;
+        box-shadow: 8px 5px 8px 5px #222020;
+    }
+
+
+    main {
+        padding: 0px 10px 0px 10px;
+    }
+
+    .profile img {
+        width: 50%;
+    }
+    
+    footer div p{
+        font-size: 25px;
+    }
+
+    footer p{
+        margin: 0px 0px 5px;
+        padding: 0px 5px 5px 10px;
+        font-size: 25px;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 55%;
+        height: 25%;
+        padding: 2px;
+        
+    }
+
+    .table {
+        font-size: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box {
+        margin: 2px;
+    }
+
+    .first, .second, .third, .fourth {
+        flex-grow: 1; 
+        margin: 2px;
+    }
+
+    .first figure, .second figure, .third figure, .fourth figure {
+        margin: 10px;
+    }
+
+    footer img {
+        padding: 2px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin: 10px;
+        flex-direction: column;
+        height: 20px;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .menu-toggle input {
+        position: absolute;
+        width: 40px;
+        height: 30px;
+        opacity: 0;
+        margin: 0;
+        top: -5px;
+        right: -5px;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 20px;
+        height: 4px;
+        background-color: white;
+        margin: 0 5px;
+        left: 1px;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .jumbotron {
+        padding: 40px 20px;
+    }
+
+    div h1 {
+        margin: 140px 5px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .jumbotron {
+        padding: 40px 20px;
+    }
+
+    div h1 {
+        margin: 110px 5px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .jumbotron {
+        padding: 30px 20px;
+    }
+
+    div h1 {
+        font-size: 45px;
+        margin: 110px 5px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .jumbotron {
+        padding: 30px 20px;
+    }
+
+    div h1 {
+        font-size: 40px;
+        margin: 100px 5px;
+    }
+
+    footer div p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    div h1 {
+        font-size: 35px;
+        margin: 90px 5px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    div h1 {
+        margin: 85px 5px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    div h1 {
+        margin: 75px 5px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .jumbotron {
+        padding: 25px 20px;
+    }
+    
+    div h1 {
+        margin: 60px 5px;
+    }
+
+    .table {
+        font-size: 17px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer div p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .jumbotron {
+        padding: 20px;
+    }
+    
+    div h1 {
+        margin: 50px 5px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    div h1 {
+        font-size: 30px;
+        margin: 40px 5px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .jumbotron {
+        padding: 30px 20px;
+    }
+
+    div h1 {
+        font-size: 25px;
+        margin: 30px 5px;
+    }
+
+    .table {
+        font-size: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .first p{
+        font-size: 13.5px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    div h1 {
+        margin: 20px;
+    }
+
+    .first p{
+        font-size: 12px;
+    }
+}
